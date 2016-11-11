@@ -33,9 +33,7 @@ include "menu.php";
 <?php
 } else {
     ?>
-
     <h2><a href="index.php">Залогиниться</a> или <a href="index.php">Зарегистрироваться</a></h2>
-
     <?php
 }
 ?>
