@@ -3,7 +3,7 @@
 error_reporting(-1);
 mb_internal_encoding('utf-8');
 //header('Content-Type: text/html; charset=utf-8');
-include '.\cn\cn.php';
+include '..\cn\cn.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -28,7 +28,7 @@ include '.\cn\cn.php';
             try {
                 // $dbh = new PDO('mysql:host=localhost;dbname=dreamcatcher', _USER_NAME_, _DB_PASSWORD);
                 // $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                //  $databaseConnection
+                // $databaseConnection
                 $username = !empty($_POST['nickname']) ? trim($_POST['nickname']) : null;
                 $passwordAttempt = !empty($_POST['password']) ? trim($_POST['password']) : null;
 

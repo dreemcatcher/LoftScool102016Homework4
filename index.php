@@ -13,8 +13,11 @@ if (isset($_SESSION["user_id"])){
 <!doctype html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
     <style>
         <?php
         include 'css/main.css';
@@ -23,17 +26,13 @@ if (isset($_SESSION["user_id"])){
     </style>
 </head>
 <body>
+Залогинился такой. Молодца.
+</body>
+</html>
 <?php
-include "menu.php";
-?>
-<table width=100% cellspacing="0" cellpadding="0" border="0">
-    <tr>
-    </tr>
-</table>
-<?php
-} else {
+}else {
     ?>
-    <h2><a href="index.php">Залогиниться</a> или <a href="index.php">Зарегистрироваться</a></h2>
+    <h2><a href="index.php">Залогиниться</a> или <a href="auth/reg.php">Зарегистрироваться</a></h2>
     <?php
 }
 ?>
