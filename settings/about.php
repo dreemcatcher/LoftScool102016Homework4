@@ -33,6 +33,7 @@ if (!isset($_SESSION["user_id"])) {
             $result = $stmt->execute();
 
             $databaseConnection = null;
+            $result="Изменения сохранены";
         } catch (PDOException $e) {
             print "Error!: " . $e->getMessage() . "<br/>";
             die();
@@ -66,7 +67,11 @@ if (isset($_SESSION["user_id"])) {
             <tr>
                 <td width="15%"></td>
                 <td width="69%" align="center">
+
                     <?php
+                    if (isset($result)){
+                        echo $result;
+                    }
                     if (isset($_SESSION["user_id"])) {
                         ?>
                         <h1>Расскажи о себе</h1><br>
@@ -89,7 +94,7 @@ if (isset($_SESSION["user_id"])) {
                                 ?>
                             </h1></p>
                         </form>
-                        <form name="upload" action="upload.php" method="POST" ENCTYPE="multipart/form-data">
+                        <form name="upload" action="uploadphoto.php" method="POST" ENCTYPE="multipart/form-data">
                             Select the file to upload: <input type="file" name="userfile">
                             <input type="submit" name="upload" value="upload">
                         </form>

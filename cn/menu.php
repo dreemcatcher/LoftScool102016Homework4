@@ -7,7 +7,7 @@
                     echo "Приветствую ".$_SESSION['user_name']."&nbsp&nbsp&nbsp";
                     echo "<a href='index.php'>На главную </a>&nbsp";
                     echo "&nbsp<a href='settings/about.php'>О себе </a>&nbsp";
-                    echo "&nbsp<a href='files.php'>Посмотреть все фотографии </a>&nbsp";
+                    echo "&nbsp<a href='watchall.php'>Посмотреть все фотографии </a>&nbsp";
                     echo "&nbsp<a href='settings/exit.php'>Выйти </a>&nbsp";
                 }
                 else{
