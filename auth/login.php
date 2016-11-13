@@ -1,9 +1,9 @@
 <?php
-//session_start();
+session_start();
 error_reporting(-1);
 mb_internal_encoding('utf-8');
 //header('Content-Type: text/html; charset=utf-8');
-include '..\cn\cn.php';
+require_once '..\cn\cn.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,7 +12,7 @@ include '..\cn\cn.php';
     <title>Регистрация</title>
     <style>
         <?php
-        include '../css/main.css';
+        include '..\css\main.css';
         ?>
     </style>
 </head>
@@ -64,9 +64,9 @@ include '..\cn\cn.php';
                     ?>
                     <script language = 'javascript'>
                         var delay = 3000;
-                        setTimeout("document.location.href='index.php'", delay);
+                        setTimeout("document.location.href='../index.php'", delay);
                     </script>
-                    <p>Через 3 секунды Вы будете перенаправлены на него. Но на случай если ничего не происходит, вот ссылка. <a href='index.php'>Главная</a>
+                    <p>Через 3 секунды Вы будете перенаправлены на него. Но на случай если ничего не происходит, вот ссылка. <a href='../index.php'>Главная</a>
                     </p>
                     <?php
                 }
@@ -77,8 +77,8 @@ include '..\cn\cn.php';
             }
             ?><br><br><br><br>
             <div id='login'>
-                <form action="auth.php" method="post" name="login"><br><br>
-                    <h1>Log in</h1><br>
+                <form action="login.php" method="post" name="login"><br><br>
+                    <h1>Вход</h1><br>
                     <p>
                         <label>Ник<br><input class="input" name="nickname" size="32" type="text" placeholder="my_user_nickname"/></label><br>
                     </p>

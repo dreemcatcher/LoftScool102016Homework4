@@ -27,7 +27,10 @@ header('Content-Type: text/html; charset=utf-8');
 <body>
 <?php
 if (isset($_SESSION["user_id"])){
-        echo "Тут такой контент который отображается когда залогинился";
+    require_once 'cn/menu.php';
+    ?>
+
+<?php
 }else {
     ?>
 <div class="center">
