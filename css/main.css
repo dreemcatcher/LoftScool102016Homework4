@@ -1,0 +1,12 @@
+.center {
+    width: 450px; /* Ширина элемента в пикселах */
+    padding: 10px; /* Поля вокруг текста */
+    margin: auto; /* Выравниваем по центру */
+}
+
+.shadow {
+    background: #F5F5F5;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+}

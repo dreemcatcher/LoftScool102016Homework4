@@ -7,9 +7,8 @@ header('Content-Type: text/html; charset=utf-8');
 // тут всё просто отслеживаеи сессию
 // Если она существует, проверяемнаша она или нет.
 // Сессии нет - предлагаем залогиниться
-
-if (isset($_SESSION["user_id"])){
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,19 +19,21 @@ if (isset($_SESSION["user_id"])){
     <title>Registration</title>
     <style>
         <?php
-        include 'css/main.css';
-        include 'css/style.css';
+        require_once 'css/main.css';
+       // include 'css/style.css';
         ?>
     </style>
 </head>
 <body>
-Залогинился такой. Молодца.
-</body>
-</html>
 <?php
+if (isset($_SESSION["user_id"])){
+        echo "Тут такой контент который отображается когда залогинился";
 }else {
     ?>
-    <h2><a href="index.php">Залогиниться</a> или <a href="auth/reg.php">Зарегистрироваться</a></h2>
+<div class="center">
+    <div class="shadow">
+    <h2><a href="auth/login.php">Залогиниться</a> или <a href="auth/reg.php">Зарегистрироваться</a></h2>
+</div></div>
     <?php
 }
 ?>
