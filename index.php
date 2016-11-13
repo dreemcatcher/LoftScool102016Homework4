@@ -3,7 +3,6 @@ session_start();
 error_reporting(-1);
 mb_internal_encoding('utf-8');
 header('Content-Type: text/html; charset=utf-8');
-
 // тут всё просто отслеживаеи сессию
 // Если она существует, проверяемнаша она или нет.
 // Сессии нет - предлагаем залогиниться
@@ -20,7 +19,6 @@ header('Content-Type: text/html; charset=utf-8');
     <style>
         <?php
         require_once 'css/main.css';
-       // include 'css/style.css';
         ?>
     </style>
 </head>

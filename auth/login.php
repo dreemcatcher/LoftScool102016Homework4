@@ -2,7 +2,6 @@
 session_start();
 error_reporting(-1);
 mb_internal_encoding('utf-8');
-//header('Content-Type: text/html; charset=utf-8');
 require_once '..\cn\cn.php';
 ?>
 <!doctype html>

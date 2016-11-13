@@ -13,7 +13,6 @@ require_once 'cn\cn.php';
     <style>
         <?php
         include 'css/main.css';
-       // include 'css/style.css';
         ?>
     </style>
 </head>
@@ -54,8 +53,8 @@ if (isset($_GET['unl'])) {
         $result = $stmt->execute();
         if ($result) {
             echo "<br>Файл был успешно удалён.<br>";
-            // echo "<script language='JavaScript'>";
-            //  echo "window.location.href = 'index.php'</script>";
+             // echo "<script language='JavaScript'>";
+             // echo "window.location.href = 'http://loftscool102016homework4/index.php'</script>";
         }
     } else {
         echo "<br>У вас нет прав на удаление данного файла.<br>";

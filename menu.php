@@ -11,10 +11,7 @@
                     echo "&nbsp<a href='http://loftscool102016homework4/watchall.php'>Посмотреть все фотографии </a>&nbsp";
                     echo "&nbsp<a href='http://loftscool102016homework4/settings/exit.php'>Выйти </a>&nbsp";
                 } else {
-                    echo "
-<a href='index.php'>На главную </a>&nbsp
-<a href='reg.php'>Зарегистрироваться </a>&nbsp
-<a href='auth.php'>Авторизоваться </a>";
+                    echo "<a href='index.php'>На главную </a>&nbsp<a href='reg.php'>Зарегистрироваться </a>&nbsp<a href='auth.php'>Авторизоваться </a>";
                 }
                 ?>
             </td>
