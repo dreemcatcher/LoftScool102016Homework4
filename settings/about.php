@@ -18,8 +18,8 @@ if (!isset($_SESSION["user_id"])) {
 
         $nick = $_SESSION['user_id'];
         try {
-           // $dbh = new PDO('mysql:host=localhost;dbname=dreamcatcher', _USER_NAME_, _DB_PASSWORD);
-           // $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            // $dbh = new PDO('mysql:host=localhost;dbname=dreamcatcher', _USER_NAME_, _DB_PASSWORD);
+            // $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             $sql = "UPDATE users SET name = :username, about = :about, age = :age WHERE id = :user_id";
             $stmt = $databaseConnection->prepare($sql);
@@ -33,7 +33,7 @@ if (!isset($_SESSION["user_id"])) {
             $result = $stmt->execute();
 
             $databaseConnection = null;
-            $result="Изменения сохранены";
+            $result = "Изменения сохранены";
         } catch (PDOException $e) {
             print "Error!: " . $e->getMessage() . "<br/>";
             die();
@@ -56,7 +56,7 @@ if (!isset($_SESSION["user_id"])) {
 </head>
 <body>
 <?php
-include "../cn/menu.php";
+include "../menu.php";
 ?>
 <br><br><br><br><br><br><br><br>
 <?php
@@ -69,7 +69,7 @@ if (isset($_SESSION["user_id"])) {
                 <td width="69%" align="center">
 
                     <?php
-                    if (isset($result)){
+                    if (isset($result)) {
                         echo $result;
                     }
                     if (isset($_SESSION["user_id"])) {

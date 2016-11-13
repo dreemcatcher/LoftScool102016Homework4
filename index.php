@@ -27,7 +27,7 @@ header('Content-Type: text/html; charset=utf-8');
 <body>
 <?php
 if (isset($_SESSION["user_id"])){
-    require_once 'cn/menu.php';
+    require_once 'menu.php';
     ?>
 
 <?php

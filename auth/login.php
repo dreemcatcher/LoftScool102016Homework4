@@ -18,7 +18,7 @@ require_once '..\cn\cn.php';
 </head>
 <body>
 <?php
-//include "menu.php";
+//include "../menu.php";
 ?>
 <table width=100%  cellspacing="0" cellpadding="0">
     <tr>
@@ -26,9 +26,6 @@ require_once '..\cn\cn.php';
         <td width="69%" align="center">
             <?php
             try {
-                // $dbh = new PDO('mysql:host=localhost;dbname=dreamcatcher', _USER_NAME_, _DB_PASSWORD);
-                // $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                // $databaseConnection
                 $username = !empty($_POST['nickname']) ? trim($_POST['nickname']) : null;
                 $passwordAttempt = !empty($_POST['password']) ? trim($_POST['password']) : null;
 

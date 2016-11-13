@@ -19,7 +19,7 @@ require_once 'cn\cn.php';
 </head>
 <body>
 <?php
-include "cn/menu.php";
+include "menu.php";
 
 if (isset($_GET['unl'])) {
     // Проверяем кто владелец файла
