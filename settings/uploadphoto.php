@@ -55,8 +55,6 @@ require_once '..\cn\cn.php';
                             $uploadname = $_SESSION['user_name'] . mt_rand(10000, 99999) . time() . '.jpg';
 
                             $uploadfile = $uploaddir . $uploadname;
-
-
                             if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
                                 // echo "File is valid, and was successfully uploaded.\n";
                             } else {
